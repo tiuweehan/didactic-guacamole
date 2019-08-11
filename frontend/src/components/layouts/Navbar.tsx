@@ -9,7 +9,7 @@ const useStyles = makeStyles((theme: Theme) =>
       flexGrow: 1,
     },
     appBar: {
-      backgroundColor: '#24292e'
+      backgroundColor: '#24292e',
     },
     menuButton: {
       marginRight: theme.spacing(2),
@@ -25,11 +25,11 @@ const Navbar: React.FC = () => {
 
   return (
     <div className={classes.root}>
-      <AppBar position='fixed' className={classes.appBar}>
-        <Toolbar variant='dense' />
+      <AppBar position="fixed" className={classes.appBar}>
+        <Toolbar variant="dense" />
       </AppBar>
     </div>
-  )
-}
+  );
+};
 
 export default Navbar;
