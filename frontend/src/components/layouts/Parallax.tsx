@@ -4,7 +4,7 @@ const useStyles = makeStyles(() =>
   createStyles({
     wrapper: {
       height: '100vh',
-      overflowX: 'auto',
+      overflowX: 'hidden',
       overflowY: 'auto',
       perspective: '2px',
     },
@@ -14,6 +14,7 @@ const useStyles = makeStyles(() =>
       display: 'flex',
       alignItems: 'center',
       justifyContent: 'center',
+      textAlign: 'center',
       color: 'white',
       textShadow: '0 0 5px #000',
     },
@@ -36,6 +37,9 @@ const useStyles = makeStyles(() =>
     bg1: {
       '&:after': {
         backgroundImage: "url('/images/kitten.png')",
+        backgroundRepeat: 'no-repeat',
+        backgroundSize: 'cover',
+        backgroundPosition: 'left center',
       },
     },
   }),
