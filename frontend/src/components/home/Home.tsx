@@ -1,6 +1,7 @@
 import React from 'react';
 import { createStyles, makeStyles } from '@material-ui/core/styles';
 import HomeAbout from 'components/home/HomeAbout';
+import HomeProfile from 'components/home/HomeProfile';
 
 const useStyles = makeStyles(() =>
   createStyles({
@@ -28,9 +29,6 @@ const useStyles = makeStyles(() =>
         zIndex: -1,
       },
     },
-    static: {
-      background: '#ddd',
-    },
     bg1: {
       '&:after': {
         backgroundImage: "url('/images/universe.jpg')",
@@ -50,8 +48,8 @@ const Home: React.FC = () => {
       <section className={`${classes.section} ${classes.parallax} ${classes.bg1}`}>
         <HomeAbout />
       </section>
-      <section className={`${classes.section} ${classes.static}`}>
-        <h1>{'Welcome to my website!'}</h1>
+      <section className={`${classes.section}`}>
+        <HomeProfile />
       </section>
     </main>
   );
