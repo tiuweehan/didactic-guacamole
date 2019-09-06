@@ -8,7 +8,7 @@ const useStyles = makeStyles((theme: Theme) =>
       flexGrow: 1,
     },
     appBar: {
-      backgroundColor: '#24292e',
+      backgroundColor: '#011014',
     },
     title: {
       flexGrow: 1,

@@ -1,5 +1,8 @@
 import React from 'react';
 import { createStyles, makeStyles } from '@material-ui/core/styles';
+import Home from 'components/home/Home';
+import 'css/Starfield.css';
+
 const useStyles = makeStyles(() =>
   createStyles({
     wrapper: {
@@ -12,11 +15,6 @@ const useStyles = makeStyles(() =>
       position: 'relative',
       height: '100vh',
       display: 'flex',
-      alignItems: 'center',
-      justifyContent: 'center',
-      textAlign: 'center',
-      color: 'white',
-      textShadow: '0 0 5px #000',
     },
     parallax: {
       '&:after': {
@@ -36,7 +34,7 @@ const useStyles = makeStyles(() =>
     },
     bg1: {
       '&:after': {
-        backgroundImage: "url('/images/kitten.png')",
+        backgroundImage: "url('/images/universe.jpg')",
         backgroundRepeat: 'no-repeat',
         backgroundSize: 'cover',
         backgroundPosition: 'left center',
@@ -45,13 +43,20 @@ const useStyles = makeStyles(() =>
   }),
 );
 
-const Parallax: React.FC = () => {
+const Main: React.FC = () => {
   const classes = useStyles();
 
   return (
     <main className={classes.wrapper}>
       <section className={`${classes.section} ${classes.parallax} ${classes.bg1}`}>
-        <h1 style={{ fontSize: 50 }}>Tiu Wee Han</h1>
+        <div id="space">
+          <div className="stars"></div>
+          <div className="stars"></div>
+          <div className="stars"></div>
+          <div className="stars"></div>
+          <div className="stars"></div>
+        </div>
+        <Home />
       </section>
       <section className={`${classes.section} ${classes.static}`}>
         <h1>{'Welcome to my website!'}</h1>
@@ -60,4 +65,4 @@ const Parallax: React.FC = () => {
   );
 };
 
-export default Parallax;
+export default Main;
