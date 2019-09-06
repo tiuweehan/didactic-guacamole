@@ -1,24 +1,43 @@
 import React from 'react';
 import { createStyles, makeStyles } from '@material-ui/core/styles';
-import { Grid } from '@material-ui/core';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import HomeAbout from 'components/home/HomeAbout';
+import 'css/Starfield.css';
 
 const useStyles = makeStyles(() =>
   createStyles({
     wrapper: {
-      alignItems: 'center',
-      justifyContent: 'center',
-      textAlign: 'center',
-      color: 'white',
-      opacity: 0.9,
+      height: '100vh',
+      overflowX: 'hidden',
+      overflowY: 'auto',
+      perspective: '2px',
     },
-    icon: {
-      marginLeft: '5px',
-      marginRight: '5px',
-      opacity: 0.5,
-      '&:hover': {
-        opacity: 0.95,
-        cursor: 'pointer',
+    section: {
+      position: 'relative',
+      height: '100vh',
+      display: 'flex',
+    },
+    parallax: {
+      '&:after': {
+        content: '""',
+        position: 'absolute',
+        top: 0,
+        right: 0,
+        bottom: 0,
+        left: 0,
+        transform: 'translateZ(-2px) scale(2)',
+        backgroundSize: '100%',
+        zIndex: -1,
+      },
+    },
+    static: {
+      background: 'gray',
+    },
+    bg1: {
+      '&:after': {
+        backgroundImage: "url('/images/universe.jpg')",
+        backgroundRepeat: 'no-repeat',
+        backgroundSize: 'cover',
+        backgroundPosition: 'left center',
       },
     },
   }),
@@ -28,13 +47,21 @@ const Home: React.FC = () => {
   const classes = useStyles();
 
   return (
-    <Grid container className={classes.wrapper}>
-      <Grid item xs={12}>
-        <h1 style={{ fontSize: 50 }}>Tiu Wee Han</h1>
-        <FontAwesomeIcon className={classes.icon} icon={['fab', 'github']} size={'3x'} />
-        <FontAwesomeIcon className={classes.icon} icon={['fab', 'linkedin']} size={'3x'} />
-      </Grid>
-    </Grid>
+    <main className={classes.wrapper}>
+      <section className={`${classes.section} ${classes.parallax} ${classes.bg1}`}>
+        <div id="space">
+          <div className="stars"></div>
+          <div className="stars"></div>
+          <div className="stars"></div>
+          <div className="stars"></div>
+          <div className="stars"></div>
+        </div>
+        <HomeAbout />
+      </section>
+      <section className={`${classes.section} ${classes.static}`}>
+        <h1>{'Welcome to my website!'}</h1>
+      </section>
+    </main>
   );
 };
 

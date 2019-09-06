@@ -2,14 +2,14 @@ import React from 'react';
 import { StylesProvider } from '@material-ui/styles';
 import { CssBaseline } from '@material-ui/core';
 import Layout from 'components/layouts/Layout';
-import Main from 'components/layouts/Main';
+import Pages from 'components/layouts/Pages';
 
 const App: React.FC = () => {
   return (
     <StylesProvider injectFirst>
       <CssBaseline />
       <Layout />
-      <Main />
+      <Pages />
     </StylesProvider>
   );
 };
