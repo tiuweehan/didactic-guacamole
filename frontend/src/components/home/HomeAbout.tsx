@@ -22,6 +22,9 @@ const useStyles = makeStyles(() =>
         cursor: 'pointer',
       },
     },
+    link: {
+      color: 'white',
+    },
   }),
 );
 
@@ -39,8 +42,17 @@ const HomeAbout: React.FC = () => {
       </div>
       <Grid item xs={12}>
         <h1 style={{ fontSize: 50 }}>Tiu Wee Han</h1>
-        <FontAwesomeIcon className={classes.icon} icon={['fab', 'github']} size={'3x'} />
-        <FontAwesomeIcon className={classes.icon} icon={['fab', 'linkedin']} size={'3x'} />
+        <a href="https://github.com/tiuweehan" target="_blank" rel="noopener noreferrer" className={classes.link}>
+          <FontAwesomeIcon className={classes.icon} icon={['fab', 'github']} size={'3x'} />
+        </a>
+        <a
+          href="https://www.linkedin.com/in/wee-han/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className={classes.link}
+        >
+          <FontAwesomeIcon className={classes.icon} icon={['fab', 'linkedin']} size={'3x'} />
+        </a>
       </Grid>
     </Grid>
   );

@@ -17,20 +17,24 @@ const useStyles = makeStyles(() =>
       margin: 'auto',
       background: 'blue',
       justifyContent: 'center',
-    }
-  }
-));
+    },
+  }),
+);
 
 const HomeProfile: React.FC = () => {
   const classes = useStyles();
 
   return (
     <div className={classes.wrapper}>
-      <Typography variant='h4'>Hello World!</Typography>
+      <Typography variant="h4">Hello World!</Typography>
       &nbsp;
-      <Typography> My name is Wee Han, and I am a Computer Science and Applied Mathematics student at the National University of Singapore.</Typography>
+      <Typography>
+        {' '}
+        My name is Wee Han, and I am a Computer Science and Applied Mathematics student at the National University of
+        Singapore.
+      </Typography>
     </div>
   );
-}
+};
 
 export default HomeProfile;
