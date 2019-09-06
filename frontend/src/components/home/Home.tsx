@@ -1,7 +1,6 @@
 import React from 'react';
 import { createStyles, makeStyles } from '@material-ui/core/styles';
 import HomeAbout from 'components/home/HomeAbout';
-import 'css/Starfield.css';
 
 const useStyles = makeStyles(() =>
   createStyles({
@@ -30,7 +29,7 @@ const useStyles = makeStyles(() =>
       },
     },
     static: {
-      background: 'gray',
+      background: '#ddd',
     },
     bg1: {
       '&:after': {
@@ -49,13 +48,6 @@ const Home: React.FC = () => {
   return (
     <main className={classes.wrapper}>
       <section className={`${classes.section} ${classes.parallax} ${classes.bg1}`}>
-        <div id="space">
-          <div className="stars"></div>
-          <div className="stars"></div>
-          <div className="stars"></div>
-          <div className="stars"></div>
-          <div className="stars"></div>
-        </div>
         <HomeAbout />
       </section>
       <section className={`${classes.section} ${classes.static}`}>

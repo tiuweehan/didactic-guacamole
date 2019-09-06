@@ -2,6 +2,7 @@ import React from 'react';
 import { createStyles, makeStyles } from '@material-ui/core/styles';
 import { Grid } from '@material-ui/core';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import 'css/Starfield.css';
 
 const useStyles = makeStyles(() =>
   createStyles({
@@ -29,6 +30,13 @@ const HomeAbout: React.FC = () => {
 
   return (
     <Grid container className={classes.wrapper}>
+      <div id="space">
+        <div className="stars"></div>
+        <div className="stars"></div>
+        <div className="stars"></div>
+        <div className="stars"></div>
+        <div className="stars"></div>
+      </div>
       <Grid item xs={12}>
         <h1 style={{ fontSize: 50 }}>Tiu Wee Han</h1>
         <FontAwesomeIcon className={classes.icon} icon={['fab', 'github']} size={'3x'} />
