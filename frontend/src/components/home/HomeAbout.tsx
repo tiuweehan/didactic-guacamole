@@ -2,6 +2,7 @@ import React from 'react';
 import { createStyles, makeStyles } from '@material-ui/core/styles';
 import { Grid } from '@material-ui/core';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import 'css/Starfield.css';
 
 const useStyles = makeStyles(() =>
@@ -14,8 +15,8 @@ const useStyles = makeStyles(() =>
       opacity: 0.9,
     },
     icon: {
-      marginLeft: '5px',
-      marginRight: '5px',
+      marginLeft: '6px',
+      marginRight: '6px',
       opacity: 0.5,
       '&:hover': {
         opacity: 0.95,
@@ -52,6 +53,12 @@ const HomeAbout: React.FC = () => {
           className={classes.link}
         >
           <FontAwesomeIcon className={classes.icon} icon={['fab', 'linkedin']} size={'3x'} />
+        </a>
+        <a href="mailto:weehan@nushackers.org" target="_blank" rel="noopener noreferrer" className={classes.link}>
+          <FontAwesomeIcon className={classes.icon} icon={faEnvelope} size={'3x'} />
+        </a>
+        <a href="https://www.facebook.com/Weegieee" target="_blank" rel="noopener noreferrer" className={classes.link}>
+          <FontAwesomeIcon className={classes.icon} icon={['fab', 'facebook-square']} size={'3x'} />
         </a>
       </Grid>
     </Grid>
