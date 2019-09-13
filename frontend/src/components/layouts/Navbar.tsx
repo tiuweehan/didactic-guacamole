@@ -72,11 +72,9 @@ const Navbar: React.FC = () => {
       <AppBar position="fixed" className={classes.mobileAppBar}>
         <Toolbar variant="dense">
           <div className={classes.buffer}></div>
-          <Link to="/" className={classes.link}>
-            <IconButton onClick={() => setIsOpen(!isOpen)}>
-              <MenuIcon className={classes.hamburger} />
-            </IconButton>
-          </Link>
+          <IconButton onClick={() => setIsOpen(!isOpen)}>
+            <MenuIcon className={classes.hamburger} />
+          </IconButton>
           <AppDrawer isOpen={isOpen} setIsOpen={setIsOpen} />
         </Toolbar>
       </AppBar>
