@@ -36,7 +36,7 @@ const HomeProfile: React.FC = () => {
         My name is Wee Han, and I am a Computer Science and Applied Mathematics undergraduate at the{' '}
         <a href="https://en.wikipedia.org/wiki/National_University_of_Singapore">National University of Singapore</a>.
       </Typography>
-      <img className={classes.nusLogo} src="/images/NUS.png" />
+      <img className={classes.nusLogo} src="/images/NUS.png" alt="NUS" />
       <Typography></Typography>
     </div>
   );
