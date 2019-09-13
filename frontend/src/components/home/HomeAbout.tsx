@@ -13,6 +13,8 @@ const useStyles = makeStyles(() =>
       textAlign: 'center',
       color: 'white',
       opacity: 0.9,
+      position: 'relative',
+      top: '-6vh',
     },
     icon: {
       marginLeft: '6px',
