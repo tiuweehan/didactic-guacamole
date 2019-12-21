@@ -1,7 +1,6 @@
 import React from 'react';
 import { createStyles, makeStyles, Theme } from '@material-ui/core/styles';
-import { Grid, Typography, Divider } from '@material-ui/core';
-import ProjectsPostTemplate from './ProjectsPostTemplate';
+import { Grid, Typography } from '@material-ui/core';
 
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
@@ -34,22 +33,19 @@ const useStyles = makeStyles((theme: Theme) =>
   }),
 );
 
-const Projects: React.FC = () => {
+const ProjectsPostTemplate: React.FC = () => {
   const classes = useStyles();
 
   return (
-    <div className={classes.root}>
-      <Grid container className={classes.header}>
-        <Typography variant="h3" className={classes.title}>
-          Projects
-        </Typography>
+    <Grid container>
+      <Grid item xs={12}>
+        <Grid container className={classes.header}>
+          <h3>SMU-SMIF Website</h3>
+        </Grid>
       </Grid>
-      <br />
-      <Divider />
-      <br />
-      <ProjectsPostTemplate />
-    </div>
+      <Typography className={classes.text}></Typography>
+    </Grid>
   );
 };
 
-export default Projects;
+export default ProjectsPostTemplate;

@@ -38,8 +38,7 @@ interface ExperiencePostData {
   header: string;
   workplace?: string;
   startDate: string;
-  endDate?: string;
-  text: string;
+  endDate: string;
 }
 
 const ExperiencePostTemplate: React.FC<ExperiencePostData> = ({
@@ -48,7 +47,7 @@ const ExperiencePostTemplate: React.FC<ExperiencePostData> = ({
   workplace,
   startDate,
   endDate,
-  text,
+  children,
 }) => {
   const classes = useStyles();
 
@@ -56,17 +55,17 @@ const ExperiencePostTemplate: React.FC<ExperiencePostData> = ({
     <Grid container>
       <Grid item xs={12}>
         <Grid container className={classes.imageContainer}>
-          <img src={image} className={classes.image} />
+          <img src={image} alt={''} className={classes.image} />
         </Grid>
       </Grid>
       <Grid item xs={12}>
         <Grid className={classes.headerContent}>
           <h2 className={classes.header}>{header}</h2>
           {workplace && <Typography variant="subtitle1">{workplace}</Typography>}
-          <h3 className={classes.subheader}>{startDate + ' — ' + (endDate ? endDate : 'Present')}</h3>
+          <h3 className={classes.subheader}>{startDate + ' — ' + endDate}</h3>
         </Grid>
       </Grid>
-      <Typography className={classes.text}>{text}</Typography>
+      {children}
     </Grid>
   );
 };
