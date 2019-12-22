@@ -1,7 +1,7 @@
 import React from 'react';
 import { createStyles, makeStyles } from '@material-ui/core/styles';
-import HomeAbout from 'components/home/HomeAbout';
-import HomeProfile from 'components/home/HomeProfile';
+import HomeAbout from 'components/home/pages/HomeAbout';
+import HomeProfile from 'components/home/pages/HomeProfile';
 
 const useStyles = makeStyles(() =>
   createStyles({
