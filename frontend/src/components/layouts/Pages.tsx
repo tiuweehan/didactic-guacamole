@@ -1,8 +1,8 @@
 import * as React from 'react';
 import { Route, Switch } from 'react-router-dom';
 import Home from 'components/home/pages/Home';
-import Experience from 'components/experience/Experience';
-import Projects from 'components/projects/Projects';
+import Experience from 'components/experience/pages/Experience';
+import Projects from 'components/projects/pages/Projects';
 
 const Pages: React.FC = () => {
   return (
