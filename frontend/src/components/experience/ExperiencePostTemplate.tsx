@@ -5,12 +5,15 @@ import { Grid, Typography } from '@material-ui/core';
 const useStyles = makeStyles(() =>
   createStyles({
     imageContainer: {
-      justifyContent: 'center',
+      display: 'block',
       margin: '20px 0px 20px 0px',
     },
     image: {
+      display: 'block',
+      margin: 'auto',
       minWidth: '200px',
       width: '30%',
+      height: 'auto',
     },
     headerContent: {
       width: '100%',
