@@ -23,12 +23,12 @@ const useStyles = makeStyles(() =>
       maxWidth: 250,
       maxHeight: 100,
     },
-    role: {
+    name: {
       fontSize: '1.1rem',
       fontWeight: 'bold',
       textAlign: 'center',
     },
-    company: {
+    application: {
       color: '#888',
       fontSize: '1.25rem',
       fontWeight: 300,
@@ -44,12 +44,12 @@ const useStyles = makeStyles(() =>
 
 export interface Props {
   displayPictureUrl: string;
-  role: string;
-  company: string;
+  name: string;
+  application: string;
   dateRange: string;
 }
 
-const ExperienceCard: React.FC<Props> = ({ displayPictureUrl, role, company, dateRange, children }) => {
+const ProjectCard: React.FC<Props> = ({ displayPictureUrl, name, application, dateRange, children }) => {
   const classes = useStyles();
 
   return (
@@ -65,13 +65,13 @@ const ExperienceCard: React.FC<Props> = ({ displayPictureUrl, role, company, dat
           <LineBreak height={'25px'} />
           <Grid item xs={12}>
             <Grid container justify="center" alignContent="center">
-              <Box className={classes.role}>{role}</Box>
+              <Box className={classes.name}>{name}</Box>
             </Grid>
           </Grid>
           <LineBreak height={'5px'} />
           <Grid item xs={12}>
             <Grid container justify="center" alignContent="center">
-              <Box className={classes.company}>{company}</Box>
+              <Box className={classes.application}>{application}</Box>
             </Grid>
           </Grid>
           <LineBreak height={'5px'} />
@@ -87,4 +87,4 @@ const ExperienceCard: React.FC<Props> = ({ displayPictureUrl, role, company, dat
   );
 };
 
-export default ExperienceCard;
+export default ProjectCard;
