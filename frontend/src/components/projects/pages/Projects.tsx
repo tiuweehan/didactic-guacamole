@@ -54,10 +54,19 @@ const Projects: React.FC = () => {
         </Grid>
         <Grid item xs={12} sm={6} md={4}>
           <ProjectCard
+            displayPictureUrl={'/images/AlgoBase.jpg'}
+            name={'AlgoBase'}
+            application={'Desktop Application'}
+            dateRange={'August 2019 – November 2019'}
+          />
+          <LineBreak height={'15px'} />
+        </Grid>
+        <Grid item xs={12} sm={6} md={4}>
+          <ProjectCard
             displayPictureUrl={'/images/SMU-SMIF.png'}
             name={'SMU-SMIF Website'}
             application={'Web Application'}
-            dateRange={'July 2019 – August 2019'}
+            dateRange={'July 2019 – Present'}
           />
           <LineBreak height={'15px'} />
         </Grid>
@@ -66,7 +75,7 @@ const Projects: React.FC = () => {
             displayPictureUrl={'/images/TWH.png'}
             name={'This Website'}
             application={'Web Application'}
-            dateRange={'July 2019 – August 2019'}
+            dateRange={'July 2019 – Present'}
           />
           <LineBreak height={'15px'} />
         </Grid>
@@ -75,13 +84,13 @@ const Projects: React.FC = () => {
             displayPictureUrl={'/images/AUN-QA.jpg'}
             name={'AUN-QA Web Portal'}
             application={'Web Application'}
-            dateRange={'May 2019 – August 2019'}
+            dateRange={'May 2019 – September 2019'}
           />
           <LineBreak height={'15px'} />
         </Grid>
         <Grid item xs={12} sm={6} md={4}>
           <ProjectCard
-            displayPictureUrl={'/images/AUN-QA.jpg'}
+            displayPictureUrl={'/images/SAC-NL.jpg'}
             name={'SAC-NL Web Portal'}
             application={'Web Application'}
             dateRange={'May 2019 – September 2019'}
