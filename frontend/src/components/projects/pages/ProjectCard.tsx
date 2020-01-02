@@ -8,8 +8,9 @@ const useStyles = makeStyles(() =>
     card: {
       display: 'block',
       margin: 'auto',
-      height: 600,
+      height: 650,
       width: '95%',
+      maxWidth: 400,
     },
     cardContent: {
       width: '100%',

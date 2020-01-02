@@ -43,7 +43,7 @@ const Projects: React.FC = () => {
       <Divider />
       <br />
       <Grid container>
-        <Grid item xs={12} sm={6} md={4}>
+        <Grid item xs={12} md={6} lg={4}>
           <ProjectCard
             displayPictureUrl={'/images/Bullseye.png'}
             name={'Bullseye'}
@@ -52,7 +52,7 @@ const Projects: React.FC = () => {
           />
           <LineBreak height={'15px'} />
         </Grid>
-        <Grid item xs={12} sm={6} md={4}>
+        <Grid item xs={12} md={6} lg={4}>
           <ProjectCard
             displayPictureUrl={'/images/AlgoBase.jpg'}
             name={'AlgoBase'}
@@ -61,7 +61,7 @@ const Projects: React.FC = () => {
           />
           <LineBreak height={'15px'} />
         </Grid>
-        <Grid item xs={12} sm={6} md={4}>
+        <Grid item xs={12} md={6} lg={4}>
           <ProjectCard
             displayPictureUrl={'/images/SMU-SMIF.png'}
             name={'SMU-SMIF Website'}
@@ -70,7 +70,7 @@ const Projects: React.FC = () => {
           />
           <LineBreak height={'15px'} />
         </Grid>
-        <Grid item xs={12} sm={6} md={4}>
+        <Grid item xs={12} md={6} lg={4}>
           <ProjectCard
             displayPictureUrl={'/images/TWH.png'}
             name={'This Website'}
@@ -79,7 +79,7 @@ const Projects: React.FC = () => {
           />
           <LineBreak height={'15px'} />
         </Grid>
-        <Grid item xs={12} sm={6} md={4}>
+        <Grid item xs={12} md={6} lg={4}>
           <ProjectCard
             displayPictureUrl={'/images/AUN-QA.jpg'}
             name={'AUN-QA Web Portal'}
@@ -88,7 +88,7 @@ const Projects: React.FC = () => {
           />
           <LineBreak height={'15px'} />
         </Grid>
-        <Grid item xs={12} sm={6} md={4}>
+        <Grid item xs={12} md={6} lg={4}>
           <ProjectCard
             displayPictureUrl={'/images/SAC-NL.jpg'}
             name={'SAC-NL Web Portal'}
