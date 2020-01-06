@@ -22,7 +22,9 @@ const useStyles = makeStyles((theme: Theme) =>
       justifyContent: 'center',
     },
     text: {
-      textAlign: 'justify',
+      color: '#555',
+      padding: '20px 12% 0px 12%',
+      textAlign: 'center',
       fontSize: '16px',
       lineHeight: 1.5,
     },
@@ -49,7 +51,11 @@ const Projects: React.FC = () => {
             name={'Bullseye'}
             application={'iOS Application'}
             dateRange={'December 2019 – December 2019'}
-          />
+          >
+            <Typography className={classes.text}>
+              Bullseye is a simple game I developed to learn the basics of Swift and SwiftUI.
+            </Typography>
+          </ProjectCard>
           <LineBreak height={'15px'} />
         </Grid>
         <Grid item xs={12} md={6} lg={4}>
@@ -58,7 +64,15 @@ const Projects: React.FC = () => {
             name={'AlgoBase'}
             application={'Desktop Application'}
             dateRange={'August 2019 – November 2019'}
-          />
+          >
+            <Typography className={classes.text}>
+              AlgoBase is a one-stop algorithm management platform, designed for students preparing for technical
+              interviews.
+            </Typography>
+            <Typography className={classes.text}>
+              AlgoBase is written in Java and uses JavaFX as its GUI library.
+            </Typography>
+          </ProjectCard>
           <LineBreak height={'15px'} />
         </Grid>
         <Grid item xs={12} md={6} lg={4}>
@@ -67,7 +81,7 @@ const Projects: React.FC = () => {
             name={'SMU-SMIF Website'}
             application={'Web Application'}
             dateRange={'July 2019 – Present'}
-          />
+          ></ProjectCard>
           <LineBreak height={'15px'} />
         </Grid>
         <Grid item xs={12} md={6} lg={4}>
@@ -76,7 +90,7 @@ const Projects: React.FC = () => {
             name={'This Website'}
             application={'Web Application'}
             dateRange={'July 2019 – Present'}
-          />
+          ></ProjectCard>
           <LineBreak height={'15px'} />
         </Grid>
         <Grid item xs={12} md={6} lg={4}>
@@ -85,7 +99,7 @@ const Projects: React.FC = () => {
             name={'AUN-QA Web Portal'}
             application={'Web Application'}
             dateRange={'May 2019 – September 2019'}
-          />
+          ></ProjectCard>
           <LineBreak height={'15px'} />
         </Grid>
         <Grid item xs={12} md={6} lg={4}>
@@ -94,7 +108,7 @@ const Projects: React.FC = () => {
             name={'SAC-NL Web Portal'}
             application={'Web Application'}
             dateRange={'May 2019 – September 2019'}
-          />
+          ></ProjectCard>
           <LineBreak height={'15px'} />
         </Grid>
       </Grid>
