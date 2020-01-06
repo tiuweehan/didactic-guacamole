@@ -39,6 +39,7 @@ const useStyles = makeStyles(() =>
       color: '#888',
       fontSize: '1rem',
       textAlign: 'center',
+      margin: '0 0 15px 0',
     },
   }),
 );

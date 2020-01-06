@@ -62,7 +62,16 @@ const Experience: React.FC = () => {
             company={'Computing for Voluntary Welfare Organisations (CVWO)'}
             dateRange={'May 2019 – September 2019'}
           >
-            <Typography></Typography>
+            <Typography className={classes.text}>
+              As a software engineering intern under CVWO, I was forunate enough to work on 2 projects, AUN-QA (built
+              from scratch) & SAC-NL (an existing live system). Read about them{' '}
+              <a href="https://tiuweehan.com/projects">here</a>.
+            </Typography>
+            <Typography className={classes.text}>
+              Overall, it was a great experience; I learnt a lot on full-stack development and DevOps, got to meet
+              clients to understand their needs, and it was nice seeing how my work was actually contributing to a good
+              cause.
+            </Typography>
           </ExperienceCard>
           <LineBreak height={'15px'} />
         </Grid>
@@ -72,7 +81,17 @@ const Experience: React.FC = () => {
             role={'Data Analyst'}
             company={'Cancer Science Institute (CSI)'}
             dateRange={'January 2019 – May 2019'}
-          ></ExperienceCard>
+          >
+            <Typography className={classes.text}>
+              As a data analyst under the Cancer Science Institute, I worked with NSCC supercomputers to parse and
+              extract meaningful results from terabytes of raw genomic data. These results were used to evaluate
+              different profiling algorithms (known as Variant Callers) based on cost, speed and accuracy.
+            </Typography>
+            <Typography className={classes.text}>
+              I learnt how to write Shell and Python scripts to clean and extract data, and gained insights on job
+              scheduling in distributed systems.
+            </Typography>
+          </ExperienceCard>
           <LineBreak height={'15px'} />
         </Grid>
       </Grid>
@@ -127,8 +146,8 @@ const Experience: React.FC = () => {
               CVWO is a student group with the mission of building IT systems to serve the needs of the community.
             </Typography>
             <Typography className={classes.text}>
-              I oversee publicity and manage daily operations of our services, which are used by more than 10 VWOs
-              across Singapore and serves thousands of people everyday.
+              I oversee publicity and help to manage daily operations of our services, which are used by more than 10
+              VWOs across Singapore and serves thousands of people everyday.
             </Typography>
           </ExperienceCard>
           <LineBreak height={'15px'} />

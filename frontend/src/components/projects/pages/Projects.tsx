@@ -23,8 +23,8 @@ const useStyles = makeStyles((theme: Theme) =>
     },
     text: {
       color: '#555',
-      padding: '20px 12% 0px 12%',
-      textAlign: 'center',
+      padding: '0px 10% 5px 10%',
+      textAlign: 'justify',
       fontSize: '16px',
       lineHeight: 1.5,
     },
@@ -53,7 +53,15 @@ const Projects: React.FC = () => {
             dateRange={'December 2019 – December 2019'}
           >
             <Typography className={classes.text}>
-              Bullseye is a simple game I developed to learn the basics of Swift and SwiftUI.
+              Bullseye is a simple game I developed to learn Swift and SwiftUI.
+            </Typography>
+            <Typography className={classes.text}>
+              I learnt a lot about Swift programming language, and personally think it is the &apos;cleanest&apos;
+              programming language I have worked with so far, especially with its dedication to type safety and
+              implementation of closures.
+            </Typography>
+            <Typography className={classes.text}>
+              SwiftUI was also fun to learn, and pretty much felt like working with React Hooks.
             </Typography>
           </ProjectCard>
           <LineBreak height={'15px'} />
@@ -67,10 +75,12 @@ const Projects: React.FC = () => {
           >
             <Typography className={classes.text}>
               AlgoBase is a one-stop algorithm management platform, designed for students preparing for technical
-              interviews.
+              interviews. The desktop application was developed as part of a project under CS2103T, a software
+              engineering module in NUS.
             </Typography>
             <Typography className={classes.text}>
-              AlgoBase is written in Java and uses JavaFX as its GUI library.
+              My main contributions include features such as a GUI Text editor and Command Line tab management. I learnt
+              a lot about applying SOLID design principles in practice.
             </Typography>
           </ProjectCard>
           <LineBreak height={'15px'} />
@@ -81,7 +91,17 @@ const Projects: React.FC = () => {
             name={'SMU-SMIF Website'}
             application={'Web Application'}
             dateRange={'July 2019 – Present'}
-          ></ProjectCard>
+          >
+            <Typography className={classes.text}>
+              As a freelancer, I developed from scratch the organizational website for{' '}
+              <a href={'https://www.smusmif.com/'}>SMU-SMIF</a>, a student-run investment fund from the Singapore
+              Management University.
+            </Typography>
+            <Typography className={classes.text}>
+              Some features include a <a href={'https://www.smusmif.com/achievements'}>timeline of past achievements</a>{' '}
+              and <a href={'https://www.smusmif.com/team'}>biographies page including &gt;100 alumni</a>.
+            </Typography>
+          </ProjectCard>
           <LineBreak height={'15px'} />
         </Grid>
         <Grid item xs={12} md={6} lg={4}>
@@ -90,7 +110,15 @@ const Projects: React.FC = () => {
             name={'This Website'}
             application={'Web Application'}
             dateRange={'July 2019 – Present'}
-          ></ProjectCard>
+          >
+            <Typography className={classes.text}>
+              I included this project because I like functional programming, so click{' '}
+              <a href={'https://www.tiuweehan.com/projects'}>here</a> for infinite recursion.
+            </Typography>
+            <Typography className={classes.text}>
+              That aside, I am also using this project to implement and test technologies of interest.
+            </Typography>
+          </ProjectCard>
           <LineBreak height={'15px'} />
         </Grid>
         <Grid item xs={12} md={6} lg={4}>
@@ -99,7 +127,17 @@ const Projects: React.FC = () => {
             name={'AUN-QA Web Portal'}
             application={'Web Application'}
             dateRange={'May 2019 – September 2019'}
-          ></ProjectCard>
+          >
+            <Typography className={classes.text}>
+              <a href="http://www.aun-qa.org/">AUN-QA</a> is a regional body that accredits university degrees from its
+              30 ASEAN member universities. My team under CVWO developed a{' '}
+              <a href="https://aunqa.nuscvwo.com/">web portal</a> from scratch to consolidate and improve the efficiency
+              of their workflow.
+            </Typography>
+            <Typography className={classes.text}>
+              My main contributions include the User Interface (UI), role-based authorization, audit trails and DevOps.
+            </Typography>
+          </ProjectCard>
           <LineBreak height={'15px'} />
         </Grid>
         <Grid item xs={12} md={6} lg={4}>
@@ -107,8 +145,19 @@ const Projects: React.FC = () => {
             displayPictureUrl={'/images/SAC-NL.jpg'}
             name={'SAC-NL Web Portal'}
             application={'Web Application'}
-            dateRange={'May 2019 – September 2019'}
-          ></ProjectCard>
+            dateRange={'May 2019 – Present'}
+          >
+            <Typography className={classes.text}>
+              The SAC-NL web portal is an existing live system used by 15 elderly care centers across Singapore to
+              manage their daily processes, including organizations such as <a href="https://www.geha.com/">GEHA</a>,{' '}
+              <a href="https://www.carecorner.org.sg/">Care Corner</a> and{' '}
+              <a href="https://shenghong.org.sg/">Sheng Hong</a>.
+            </Typography>
+            <Typography className={classes.text}>
+              As a software engineer under CVWO, I liaised and deployed new systems for 3 elderly care centers that
+              joined us in 2019. I also maintained daily operations and squashed pesky bugs.
+            </Typography>
+          </ProjectCard>
           <LineBreak height={'15px'} />
         </Grid>
       </Grid>
