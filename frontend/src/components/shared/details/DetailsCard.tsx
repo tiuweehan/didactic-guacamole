@@ -42,17 +42,18 @@ const useStyles = makeStyles(() =>
 );
 
 interface Props {
+  id?: string;
   image: string;
   header: React.ReactNode;
   content: React.ReactNode;
   footer: Array<React.ReactNode>;
 }
 
-const DetailsCard: React.FC<Props> = ({ image, header, content, footer }) => {
+const DetailsCard: React.FC<Props> = ({ id, image, header, content, footer }) => {
   const classes = useStyles();
 
   return (
-    <Card className={classes.card}>
+    <Card id={id} className={classes.card}>
       <div className={classes.cardImage}>
         <img src={image} alt={'Display'} className={classes.displayPicture} />
       </div>
