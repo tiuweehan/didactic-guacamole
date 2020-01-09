@@ -52,7 +52,7 @@ const Projects: React.FC = () => {
             name={'Bullseye'}
             application={'iOS Application'}
             dateRange={'December 2019 – December 2019'}
-            footer={[<GitHubLink key={'GitHub'} url={''} />]}
+            footer={[<GitHubLink key={'GitHub'} url={'https://github.com/tiuweehan/Bullseye'} />]}
           >
             <Typography className={classes.text}>
               Bullseye is a simple game I developed to learn the fundamentals of Swift and SwiftUI.
@@ -63,7 +63,7 @@ const Projects: React.FC = () => {
               implementation of closures.
             </Typography>
             <Typography className={classes.text}>
-              SwiftUI was also fun to learn, and pretty much felt like working with React Hooks.
+              SwiftUI was also fun to learn and its structure felt pretty much React Hooks.
             </Typography>
           </ProjectCard>
           <LineBreak height={'15px'} />
