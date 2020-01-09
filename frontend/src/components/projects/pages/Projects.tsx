@@ -35,7 +35,7 @@ const Projects: React.FC = () => {
       <CardSection title={'Notable Projects'}>
         {/* AlgoBase */}
         <ProjectCard
-          id={'Notable-Projects-AlgoBase'}
+          id={'notable-projects-algobase'}
           displayPictureUrl={'/images/AlgoBase.jpg'}
           name={'AlgoBase'}
           application={'Desktop Application'}
@@ -58,14 +58,14 @@ const Projects: React.FC = () => {
 
         {/* SMU-SMIF */}
         <ProjectCard
-          id={'Notable-Projects-SMU-SMIF'}
+          id={'notable-projects-smu-smif'}
           displayPictureUrl={'/images/SMU-SMIF.png'}
           name={'SMU-SMIF Website'}
           application={'Web Application'}
           dateRange={'July 2019 – Present'}
           footer={[
-            <GitHubLink key={'GitHub'} url={''} />,
-            <CustomLink key={'Website'} url={''} displayIcon={'/images/SMU-SMIF.png'} />,
+            <GitHubLink key={'GitHub'} url={'https://github.com/tiuweehan/SMU-SMIF'} />,
+            <CustomLink key={'Website'} url={'https://www.smusmif.com/'} displayIcon={'/images/SMU-SMIF.png'} />,
           ]}
         >
           <Typography className={classes.text}>
@@ -81,7 +81,7 @@ const Projects: React.FC = () => {
 
         {/* AUN-QA */}
         <ProjectCard
-          id={'Notable-Projects-AUN-QA'}
+          id={'notable-projects-aun-qa'}
           displayPictureUrl={'/images/AUN-QA.jpg'}
           name={'AUN-QA Web Portal'}
           application={'Web Application'}
@@ -101,7 +101,7 @@ const Projects: React.FC = () => {
 
         {/* SAC-NL */}
         <ProjectCard
-          id={'Notable-Projects-SAC-NL'}
+          id={'notable-projects-sac-nl'}
           displayPictureUrl={'/images/SAC-NL.jpg'}
           name={'SAC-NL Web Portal'}
           application={'Web Application'}
@@ -125,7 +125,7 @@ const Projects: React.FC = () => {
       <CardSection title={'Personal Projects'}>
         {/* Bullseye */}
         <ProjectCard
-          id={'Notable-Projects-Bullseye'}
+          id={'notable-projects-bullseye'}
           displayPictureUrl={'/images/Bullseye.png'}
           name={'Bullseye'}
           application={'iOS Application'}
@@ -147,20 +147,20 @@ const Projects: React.FC = () => {
 
         {/* TWH */}
         <ProjectCard
-          id={'Notable-Projects-TWH'}
+          id={'notable-projects-twh'}
           displayPictureUrl={'/images/TWH.png'}
           name={'This Website'}
           application={'Web Application'}
           dateRange={'July 2019 – Present'}
           footer={[
             <GitHubLink key={'GitHub'} url={'https://github.com/tiuweehan/didactic-guacamole'} />,
-            <CustomLink key={'Website'} url={''} displayIcon={'/images/TWH.png'} />,
+            <CustomLink key={'Website'} url={'/'} displayIcon={'/images/TWH.png'} />,
           ]}
         >
           <>
             <Typography className={classes.text}>
               I included this project because I like functional programming, so click{' '}
-              <a href={'https://www.tiuweehan.com/projects#Notable-Projects-TWH'}>here</a> for infinite recursion.
+              <a href={'https://www.tiuweehan.com/projects#notable-projects-twh'}>here</a> for infinite recursion.
             </Typography>
             <LineBreak height={'20px'} />
             <Typography className={classes.text}>

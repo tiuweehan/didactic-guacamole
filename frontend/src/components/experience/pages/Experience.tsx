@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { createStyles, makeStyles, Theme } from '@material-ui/core/styles';
 import { Typography } from '@material-ui/core';
 import CardSection from 'components/shared/details/CardSection';
@@ -49,7 +50,7 @@ const Experience: React.FC = () => {
       <CardSection title={'Work Experience'}>
         {/* CVWO */}
         <ExperienceCard
-          id={'Work-Experience-CVWO'}
+          id={'work-experience-cvwo'}
           displayPictureUrl={'/images/CVWO.png'}
           role={'Software & DevOps Engineer'}
           company={'Computing for Voluntary Welfare Organisations (CVWO)'}
@@ -59,7 +60,7 @@ const Experience: React.FC = () => {
           <Typography className={classes.text}>
             As a software engineering intern under CVWO, I was forunate enough to work on 2 projects, AUN-QA (built from
             scratch) & SAC-NL (an existing live system). Read about them{' '}
-            <a href="https://tiuweehan.com/projects">here</a>
+            <Link to={'/projects#notable-projects-aun-qa'}>here</Link>
           </Typography>
           <Typography className={classes.text}>
             Overall, it was a great experience; I learnt a lot on full-stack development and DevOps, got to meet clients
@@ -69,7 +70,7 @@ const Experience: React.FC = () => {
 
         {/* CSI */}
         <ExperienceCard
-          id={'Work-Experience-CSI'}
+          id={'work-experience-csi'}
           displayPictureUrl={'/images/CSI.png'}
           role={'Data Analyst'}
           company={'Cancer Science Institute (CSI)'}
@@ -94,7 +95,7 @@ const Experience: React.FC = () => {
       <CardSection title={'Other Experience'}>
         {/* Teaching Assistant */}
         <ExperienceCard
-          id={'Other-Experience-TA'}
+          id={'other-experience-ta'}
           displayPictureUrl={'/images/NUS.png'}
           role={'Teaching Assistant'}
           company={'National University of Singapore'}
@@ -135,7 +136,7 @@ const Experience: React.FC = () => {
 
         {/* CVWO President */}
         <ExperienceCard
-          id={'Other-Experience-CVWO'}
+          id={'other-experience-cvwo'}
           displayPictureUrl={'/images/CVWO.png'}
           role={'President'}
           company={'Computing for Voluntary Welfare Organisations (CVWO)'}
@@ -154,7 +155,7 @@ const Experience: React.FC = () => {
 
         {/* NUS Hackers */}
         <ExperienceCard
-          id={'Other-Experience-NUSHackers'}
+          id={'other-experience-nushackers'}
           displayPictureUrl={'/images/NUSHackers.svg'}
           role={'Coreteam Member'}
           company={'NUS Hackers'}
