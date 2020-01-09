@@ -164,7 +164,8 @@ const Experience: React.FC = () => {
             footer={[]}
           >
             <Typography className={classes.text}>
-              CVWO is a student group with the mission of building IT systems to serve the needs of the community.
+              Computing for Voluntary Welfare Organisations (CVWO) is a student group with the mission of building IT
+              systems that help our partner VWOs serve the community more effectively.{' '}
             </Typography>
             <Typography className={classes.text}>
               I oversee publicity and help to manage daily operations of our services, which are used by more than 10
@@ -184,11 +185,12 @@ const Experience: React.FC = () => {
             footer={[]}
           >
             <Typography className={classes.text}>
-              I am a coreteam member of NUS Hackers, a student group dedicated to spreading hacker culture.
+              NUS Hackers is a student-run organization committed to the spread of hacker culture and free, open source
+              software.{' '}
             </Typography>
             <Typography className={classes.text}>
               {
-                "I have helped organize Singapore's largest student run hackathon Hack&Roll, and organized a series of\
+                "As a coreteam member, I have helped organize Singapore's largest student run hackathon Hack&Roll, and organized a series of\
               weekly technical talks Friday Hacks with speakers from the industry and academia alike."
               }
             </Typography>

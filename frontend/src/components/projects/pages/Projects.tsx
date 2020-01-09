@@ -171,7 +171,7 @@ const Projects: React.FC = () => {
               The SAC-NL web portal is an existing live system used by 15 elderly care centers across Singapore to
               manage their daily processes, including organizations such as <a href="https://www.geha.com/">GEHA</a>,{' '}
               <a href="https://www.carecorner.org.sg/">Care Corner</a> and{' '}
-              <a href="https://shenghong.org.sg/">Sheng Hong</a>.
+              <a href="https://shenghong.org.sg/">Sheng Hong Welfare Services</a>.
             </Typography>
             <Typography className={classes.text}>
               As a software engineer under CVWO, I liaised and deployed new systems for 3 elderly care centers that
