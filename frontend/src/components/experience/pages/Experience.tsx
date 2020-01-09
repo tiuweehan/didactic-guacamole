@@ -36,7 +36,7 @@ const useStyles = makeStyles((theme: Theme) =>
       color: '#555',
       textAlign: 'justify',
       fontSize: '16px',
-      lineHeight: 1.5,
+      lineHeight: 1.8,
     },
   }),
 );

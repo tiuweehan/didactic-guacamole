@@ -3,6 +3,8 @@ import { createStyles, makeStyles, Theme } from '@material-ui/core/styles';
 import { Grid, Typography, Divider } from '@material-ui/core';
 import ProjectCard from './ProjectCard';
 import LineBreak from 'components/layouts/utils/LineBreak';
+import GitHubLink from '../links/GitHubLink';
+import CustomLink from '../links/CustomLink';
 
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
@@ -23,10 +25,9 @@ const useStyles = makeStyles((theme: Theme) =>
     },
     text: {
       color: '#555',
-      padding: '0px 10% 5px 10%',
       textAlign: 'justify',
       fontSize: '16px',
-      lineHeight: 1.5,
+      lineHeight: 1.8,
     },
   }),
 );
@@ -51,9 +52,10 @@ const Projects: React.FC = () => {
             name={'Bullseye'}
             application={'iOS Application'}
             dateRange={'December 2019 – December 2019'}
+            footer={[<GitHubLink key={'GitHub'} url={''} />]}
           >
             <Typography className={classes.text}>
-              Bullseye is a simple game I developed to learn Swift and SwiftUI.
+              Bullseye is a simple game I developed to learn the fundamentals of Swift and SwiftUI.
             </Typography>
             <Typography className={classes.text}>
               I learnt a lot about Swift programming language, and personally think it is the &apos;cleanest&apos;
@@ -72,15 +74,19 @@ const Projects: React.FC = () => {
             name={'AlgoBase'}
             application={'Desktop Application'}
             dateRange={'August 2019 – November 2019'}
+            footer={[<GitHubLink key={'GitHub'} url={'https://github.com/AY1920S1-CS2103T-W11-1/main'} />]}
           >
             <Typography className={classes.text}>
               AlgoBase is a one-stop algorithm management platform, designed for students preparing for technical
-              interviews. The desktop application was developed as part of a project under CS2103T, a software
-              engineering module in NUS.
+              interviews.
             </Typography>
             <Typography className={classes.text}>
               My main contributions include features such as a GUI Text editor and Command Line tab management. I learnt
               a lot about applying SOLID design principles in practice.
+            </Typography>
+            <Typography className={classes.text}>
+              The desktop application was developed as part of a project under CS2103T, a software engineering module in
+              NUS.
             </Typography>
           </ProjectCard>
           <LineBreak height={'15px'} />
@@ -91,6 +97,10 @@ const Projects: React.FC = () => {
             name={'SMU-SMIF Website'}
             application={'Web Application'}
             dateRange={'July 2019 – Present'}
+            footer={[
+              <GitHubLink key={'GitHub'} url={''} />,
+              <CustomLink key={'Website'} url={''} displayIcon={'/images/SMU-SMIF.png'} />,
+            ]}
           >
             <Typography className={classes.text}>
               As a freelancer, I developed from scratch the organizational website for{' '}
@@ -110,14 +120,22 @@ const Projects: React.FC = () => {
             name={'This Website'}
             application={'Web Application'}
             dateRange={'July 2019 – Present'}
+            footer={[
+              <GitHubLink key={'GitHub'} url={'https://github.com/tiuweehan/didactic-guacamole'} />,
+              <CustomLink key={'Website'} url={''} displayIcon={'/images/TWH.png'} />,
+            ]}
           >
-            <Typography className={classes.text}>
-              I included this project because I like functional programming, so click{' '}
-              <a href={'https://www.tiuweehan.com/projects'}>here</a> for infinite recursion.
-            </Typography>
-            <Typography className={classes.text}>
-              That aside, I am also using this project to implement and test technologies of interest.
-            </Typography>
+            <>
+              <Typography className={classes.text}>
+                I included this project because I like functional programming, so click{' '}
+                <a href={'https://www.tiuweehan.com/projects'}>here</a> for infinite recursion.
+              </Typography>
+              <LineBreak height={'20px'} />
+              <Typography className={classes.text}>
+                That aside, I am also using this project to implement and test technologies that I am interested in
+                learning.
+              </Typography>
+            </>
           </ProjectCard>
           <LineBreak height={'15px'} />
         </Grid>
@@ -127,6 +145,7 @@ const Projects: React.FC = () => {
             name={'AUN-QA Web Portal'}
             application={'Web Application'}
             dateRange={'May 2019 – September 2019'}
+            footer={[]}
           >
             <Typography className={classes.text}>
               <a href="http://www.aun-qa.org/">AUN-QA</a> is a regional body that accredits university degrees from its
@@ -146,6 +165,7 @@ const Projects: React.FC = () => {
             name={'SAC-NL Web Portal'}
             application={'Web Application'}
             dateRange={'May 2019 – Present'}
+            footer={[]}
           >
             <Typography className={classes.text}>
               The SAC-NL web portal is an existing live system used by 15 elderly care centers across Singapore to

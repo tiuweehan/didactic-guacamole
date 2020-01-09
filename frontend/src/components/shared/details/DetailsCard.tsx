@@ -32,6 +32,7 @@ const useStyles = makeStyles(() =>
       height: 50,
       justifyContent: 'center',
       alignItems: 'flex-end',
+      padding: '0 0 0 0',
     },
     displayPicture: {
       maxWidth: 250,
