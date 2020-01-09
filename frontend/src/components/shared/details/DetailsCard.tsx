@@ -7,7 +7,7 @@ const useStyles = makeStyles(() =>
     card: {
       display: 'block',
       margin: 'auto',
-      height: 650,
+      height: 700,
       width: '95%',
       maxWidth: 400,
       padding: '50px 20px 20px 20px',
@@ -26,7 +26,7 @@ const useStyles = makeStyles(() =>
       alignItems: 'center',
     },
     cardContent: {
-      height: 260,
+      height: 300,
     },
     cardActions: {
       height: 50,
@@ -48,7 +48,7 @@ interface Props {
   footer: Array<React.ReactNode>;
 }
 
-const CardSkeleton: React.FC<Props> = ({ image, header, content, footer }) => {
+const DetailsCard: React.FC<Props> = ({ image, header, content, footer }) => {
   const classes = useStyles();
 
   return (
@@ -63,4 +63,4 @@ const CardSkeleton: React.FC<Props> = ({ image, header, content, footer }) => {
   );
 };
 
-export default CardSkeleton;
+export default DetailsCard;

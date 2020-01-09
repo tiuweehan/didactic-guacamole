@@ -15,7 +15,7 @@ const useStyles = makeStyles(() =>
       alignItems: 'center',
     },
     slide: {
-      height: 240,
+      height: 280,
       padding: '5% 10% 5% 10%',
     },
   }),
