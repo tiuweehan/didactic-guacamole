@@ -31,7 +31,7 @@ const HomeAbout: React.FC = () => {
         <h1 className={classes.title}>{'Tiu Wee Han'}</h1>
         <GitHubProfile url={'https://github.com/tiuweehan'} />
         <LinkedInProfile url={'https://www.linkedin.com/in/wee-han/'} />
-        <EmailProfile url={'weehan@u.nus.edu'} />
+        <EmailProfile url={'mailto:contact@tiuweehan.com'} />
         <FacebookProfile url={'https://www.facebook.com/Weegieee'} />
       </Grid>
     </Grid>

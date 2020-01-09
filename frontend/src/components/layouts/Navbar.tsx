@@ -30,7 +30,6 @@ const useStyles = makeStyles((theme: Theme) =>
     },
     title: {
       flexGrow: 1,
-      // color: '#9d9d9d',
       marginLeft: theme.spacing(1),
     },
     buffer: {
@@ -59,6 +58,7 @@ const Navbar: React.FC = () => {
 
   return (
     <div className={classes.root}>
+      {/* Web App Bar */}
       <AppBar position="fixed" className={classes.webAppBar}>
         <Toolbar variant="dense">
           <Link to="/" className={classes.link}>
@@ -80,6 +80,8 @@ const Navbar: React.FC = () => {
           </Link>
         </Toolbar>
       </AppBar>
+
+      {/* Mobile App Bar */}
       <AppBar position="fixed" className={classes.mobileAppBar}>
         <Toolbar variant="dense">
           <div className={classes.buffer}></div>
