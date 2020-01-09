@@ -74,6 +74,7 @@ const Experience: React.FC = () => {
               cause.
             </Typography>
           </ExperienceCard>
+          <LineBreak height={'15px'} />
         </Grid>
 
         {/* CSI */}
