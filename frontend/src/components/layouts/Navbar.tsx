@@ -24,10 +24,13 @@ const useStyles = makeStyles((theme: Theme) =>
         display: 'none',
       },
     },
+    logo: {
+      marginLeft: theme.spacing(2),
+      height: '25px',
+    },
     title: {
       flexGrow: 1,
-      color: '#9d9d9d',
-      marginLeft: theme.spacing(2),
+      marginLeft: theme.spacing(1),
     },
     buffer: {
       flexGrow: 1,
@@ -55,9 +58,17 @@ const Navbar: React.FC = () => {
 
   return (
     <div className={classes.root}>
+      {/* Web App Bar */}
       <AppBar position="fixed" className={classes.webAppBar}>
         <Toolbar variant="dense">
-          <Typography className={classes.title}>Tiu Wee Han</Typography>
+          <Link to="/" className={classes.link}>
+            <img className={classes.logo} src={'/images/TWH.png'} alt={''} />
+          </Link>
+          <Typography className={[classes.title, classes.menuButton].join(' ')}>
+            <Link to="/" className={classes.link}>
+              Tiu Wee Han
+            </Link>
+          </Typography>
           <Link to="/" className={classes.link}>
             <Button className={classes.menuButton}>About</Button>
           </Link>
@@ -69,6 +80,8 @@ const Navbar: React.FC = () => {
           </Link>
         </Toolbar>
       </AppBar>
+
+      {/* Mobile App Bar */}
       <AppBar position="fixed" className={classes.mobileAppBar}>
         <Toolbar variant="dense">
           <div className={classes.buffer}></div>
