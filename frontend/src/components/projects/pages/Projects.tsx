@@ -33,6 +33,44 @@ const Projects: React.FC = () => {
     <div className={classes.root}>
       {/* Notable Projects */}
       <CardSection title={'Notable Projects'}>
+        {/* Netlify CMS */}
+        <ProjectCard
+          id={'notable-projects-netlify-cms'}
+          displayPictureUrl={'/images/Netlify-CMS.png'}
+          name={'Netlify CMS'}
+          application={'Web Application'}
+          dateRange={'January 2020 – Present'}
+          footer={[<GitHubLink key={'GitHub'} url={'https://github.com/netlify/netlify-cms'} />]}
+        >
+          <Typography className={classes.text}>
+            Netlify CMS is an open source headless content management system that provides a convenient interface for
+            managing static sites.
+          </Typography>
+          <Typography className={classes.text}>
+            My main contributions include refactoring the codebase (in React-Redux-Typescript) to include support for
+            multiple languages, and improved on documentation.
+          </Typography>
+        </ProjectCard>
+
+        {/* TEAMMATES */}
+        <ProjectCard
+          id={'notable-projects-algobase'}
+          displayPictureUrl={'/images/TEAMMATES.png'}
+          name={'TEAMMATES'}
+          application={'Web Application'}
+          dateRange={'January 2020 – Present'}
+          footer={[<GitHubLink key={'GitHub'} url={'https://github.com/TEAMMATES/teammates'} />]}
+        >
+          <Typography className={classes.text}>
+            TEAMMATES is a free open source online peer evaluation system used by more than 400,000 users from hundreds
+            of educational institutions.
+          </Typography>
+          <Typography className={classes.text}>
+            My main contributions include restructuring the codebase (in AngularJS-Java-Google App Engine) to improve
+            maintainability and writing tests to improve stability.
+          </Typography>
+        </ProjectCard>
+
         {/* AlgoBase */}
         <ProjectCard
           id={'notable-projects-algobase'}

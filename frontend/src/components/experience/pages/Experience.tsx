@@ -112,22 +112,9 @@ const Experience: React.FC = () => {
                   <a href="https://nusmods.com/modules/CS1101S/">CS1101S</a>
                   {" – Programming Methdology (Fall '19)"}
                 </li>
-              </ul>
-            </Typography>
-            <Typography className={classes.text} style={{ textAlign: 'center', color: '#999' }}>
-              (Swipe for more)
-            </Typography>
-          </>
-          <>
-            <Typography className={classes.text} style={{ textAlign: 'left' }}>
-              <ul>
                 <li>
-                  <li>
-                    <a href="https://nusmods.com/modules/CS2040S/">CS2040S</a>
-                    {" – Data Structures and Algorithms (Spring '20)"}
-                  </li>
-                  <a href="https://nusmods.com/modules/CS2103T/">CS2103T</a>
-                  {" – Software Engineering (Spring '20)"}
+                  <a href="https://nusmods.com/modules/CS2040S/">CS2040S</a>
+                  {" – Data Structures and Algorithms (Spring '20)"}
                 </li>
               </ul>
             </Typography>
